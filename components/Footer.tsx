@@ -44,6 +44,13 @@ export function Footer() {
               How it works
               <span aria-hidden>↗</span>
             </Link>
+            <Link
+              href="/built-with-claude-code"
+              className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 px-5 py-3 transition"
+            >
+              Built with Claude Code
+              <span aria-hidden>↗</span>
+            </Link>
           </div>
         </div>
 

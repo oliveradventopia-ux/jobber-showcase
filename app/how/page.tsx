@@ -6,6 +6,11 @@ import { AgentsGrid } from '@/components/AgentsGrid';
 import { TailoringDiagram } from '@/components/TailoringDiagram';
 import { Gates } from '@/components/Gates';
 import { Footer } from '@/components/Footer';
+import { VideoEmbed } from '@/components/VideoEmbed';
+
+// Drop a Loom / YouTube / Vimeo URL here to surface a demo video on /how
+// (renders nothing until set, so the page is safe before recording).
+const DEMO_VIDEO_URL = '';
 
 export default function HowItWorksPage() {
   return (
@@ -32,6 +37,11 @@ export default function HowItWorksPage() {
       </section>
 
       <OldVsNew />
+      <VideoEmbed
+        url={DEMO_VIDEO_URL}
+        title="Jobber dashboard demo"
+        caption="One pass through the pipeline — paste a LinkedIn JD, agents tailor + fact-check + score, I click Submit."
+      />
       <MeetJobber />
       <Pipeline />
       <AgentsGrid />
